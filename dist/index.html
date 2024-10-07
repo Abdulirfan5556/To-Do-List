@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="../src/style.css">
+<script defer src="bundle.js"></script></head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Projects</h3>
+      <input type="text" id="project-name" placeholder="Add a project" />
+      <button id="add-project">Add roject</button>
+      <button id="delete-project">Delete Project</button>
+      <ul id="project-list">
+        <li>Default</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <input type="text" id="task-name" placeholder="Task name" />
+      <input type="text" id="task-desc" placeholder="Description" />
+      <input type="date" id="task-date" />
+      <div class="priority">
+        <label>Priority:</label>
+        <input type="radio" name="priority" value="High" checked /> High
+        <input type="radio" name="priority" value="Low" /> Low
+      </div>
+      <button id="add-task">Add Task</button>
+      <button id="delete-task">Delete Task</button>
+      <ul id="task-list">
+        <li>Default</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
